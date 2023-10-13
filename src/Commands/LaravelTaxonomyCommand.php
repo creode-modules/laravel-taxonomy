@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Creode\LaravelTaxonomy\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelTaxonomyCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-taxonomy';
 
     public $description = 'My command';
 
