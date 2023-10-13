@@ -2,9 +2,9 @@
 
 namespace Creode\LaravelTaxonomy\Tests;
 
+use Creode\LaravelTaxonomy\LaravelTaxonomyServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Creode\LaravelTaxonomy\LaravelTaxonomyServiceProvider;
 
 class TestCase extends Orchestra
 {

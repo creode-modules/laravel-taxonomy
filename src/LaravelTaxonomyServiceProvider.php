@@ -2,9 +2,9 @@
 
 namespace Creode\LaravelTaxonomy;
 
+use Creode\LaravelTaxonomy\Commands\LaravelTaxonomyCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Creode\LaravelTaxonomy\Commands\LaravelTaxonomyCommand;
 
 class LaravelTaxonomyServiceProvider extends PackageServiceProvider
 {
