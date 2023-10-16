@@ -2,8 +2,8 @@
 
 namespace Creode\LaravelTaxonomy;
 
-use Creode\LaravelTaxonomy\Commands\LaravelTaxonomyCommand;
 use Spatie\LaravelPackageTools\Package;
+use Illuminate\Database\Schema\Blueprint;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class LaravelTaxonomyServiceProvider extends PackageServiceProvider
@@ -17,9 +17,19 @@ class LaravelTaxonomyServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-taxonomy')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-taxonomy_table')
-            ->hasCommand(LaravelTaxonomyCommand::class);
+            ->hasConfigFile();
+    }
+
+    public function boot() {
+        parent::boot();
+
+        /**
+         * Provides new baseTermFields() function when creating a migration.
+         */
+        Blueprint::macro('baseTermFields', function () {
+            $this->string('name')->nullable();
+            $this->string('slug')->nullable();
+            $this->unsignedBigInteger('parent_id')->nullable();
+        });
     }
 }
