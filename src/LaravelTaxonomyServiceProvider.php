@@ -2,8 +2,8 @@
 
 namespace Creode\LaravelTaxonomy;
 
-use Spatie\LaravelPackageTools\Package;
 use Illuminate\Database\Schema\Blueprint;
+use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class LaravelTaxonomyServiceProvider extends PackageServiceProvider
@@ -20,7 +20,8 @@ class LaravelTaxonomyServiceProvider extends PackageServiceProvider
             ->hasConfigFile();
     }
 
-    public function boot() {
+    public function boot()
+    {
         parent::boot();
 
         /**

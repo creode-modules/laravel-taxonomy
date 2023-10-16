@@ -10,22 +10,16 @@ class MultipleTermServiceProvider extends TermServiceProvider
 {
     /**
      * Determine if the relationship is multiple.
-     *
-     * @var boolean
      */
     protected bool $multiple = true;
 
     /**
      * The class to use for the relationship.
-     *
-     * @var string
      */
     protected string $relationClass = RelationMultiple::class;
 
     /**
      * The term model class path to use.
-     *
-     * @var string
      */
     protected string $termClass = MultipleTerm::class;
 
