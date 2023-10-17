@@ -4,7 +4,8 @@ namespace Creode\LaravelTaxonomy\Traits;
 
 trait Parentable
 {
-    protected function initializeParentable() {
+    protected function initializeParentable()
+    {
         $this->fillable[] = 'parent_id';
     }
 
