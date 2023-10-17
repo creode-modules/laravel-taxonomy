@@ -10,22 +10,16 @@ class SingleTermServiceProvider extends TermServiceProvider
 {
     /**
      * Determine if the relationship is multiple.
-     *
-     * @var boolean
      */
     protected bool $multiple = false;
 
     /**
      * The class to use for the relationship.
-     *
-     * @var string
      */
     protected string $relationClass = RelationSingle::class;
 
     /**
      * The term model class path to use.
-     *
-     * @var string
      */
     protected string $termClass = SingleTerm::class;
 

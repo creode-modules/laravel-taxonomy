@@ -26,7 +26,7 @@ class TestCase extends Orchestra
         return [
             LaravelTaxonomyServiceProvider::class,
             SingleTermServiceProvider::class,
-            MultipleTermServiceProvider::class
+            MultipleTermServiceProvider::class,
         ];
     }
 

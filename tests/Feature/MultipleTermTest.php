@@ -11,7 +11,7 @@ it('allows you to link a multiple terms to a relation', function () {
         [
             'name' => 'Term 2',
             'slug' => 'term2',
-        ]
+        ],
     ];
 
     $relation->multipleTerms()->createMany(
