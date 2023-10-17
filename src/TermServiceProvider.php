@@ -38,8 +38,6 @@ abstract class TermServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        parent::boot();
-
         $this->relationClass::resolveRelationUsing(
             $this->termClass::$machineName,
             function ($relationModel) {
