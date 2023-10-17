@@ -28,8 +28,11 @@ class LaravelTaxonomyServiceProvider extends PackageServiceProvider
          * Provides new baseTermFields() function when creating a migration.
          */
         Blueprint::macro('baseTermFields', function () {
+            /* @phpstan-ignore-next-line */
             $this->string('name')->nullable();
+            /* @phpstan-ignore-next-line */
             $this->string('slug')->nullable();
+            /* @phpstan-ignore-next-line */
             $this->unsignedBigInteger('parent_id')->nullable();
         });
     }
