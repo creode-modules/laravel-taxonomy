@@ -1,9 +1,9 @@
 # Base module for handling taxonomy within Laravel.
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/creode/laravel-taxonomy.svg?style=flat-square)](https://packagist.org/packages/creode-modules/laravel-taxonomy)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/creode/laravel-taxonomy.svg?style=flat-square)](https://packagist.org/packages/creode/laravel-taxonomy)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/creode-modules/laravel-taxonomy/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/creode-modules/laravel-taxonomy/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/creode-modules/laravel-taxonomy/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/creode-modules/laravel-taxonomy/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/creode-modules/laravel-taxonomy.svg?style=flat-square)](https://packagist.org/packages/creode/laravel-taxonomy)
+[![Total Downloads](https://img.shields.io/packagist/dt/creode/laravel-taxonomy.svg?style=flat-square)](https://packagist.org/packages/creode/laravel-taxonomy)
 
 This module is designed to allow other modules to add taxonomy to their models. It provides a base class for terms and a trait for parentable models.
 
