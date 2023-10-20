@@ -25,7 +25,15 @@ This module aims to allow you to easily create new Term models by extending the 
 
 ```php
 use Creode\LaravelTaxonomy\Models\Term;
-class Folder extends Term {}
+
+class Folder extends Term {
+    /**
+     * Machine name of the specific term to use.
+     *
+     * @var string
+     */
+    protected $machine_name = 'folders';
+}
 ```
 
 ### Dynamic Relationships
