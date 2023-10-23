@@ -1,6 +1,6 @@
 <?php
 
-namespace Creode\LaravelTaxonomy\Traits;
+namespace Creode\LaravelTaxonomy\Concerns;
 
 trait Parentable
 {
