@@ -55,7 +55,8 @@ Adding a relationship in this way allows a decoupling of dependencies between mo
 The parentable trait allows you to add a parent relationship to a term. This is useful for creating a hierarchy of terms. For example, you might want to create a folder structure for your terms.
 
 ```php
-use Creode\LaravelTaxonomy\Traits\Parentable;
+use Creode\LaravelTaxonomy\Concerns\Parentable;
+
 class Folder extends Term {
     use Parentable;
 }
