@@ -18,4 +18,14 @@ trait Parentable
     {
         return $this->belongsTo(self::class, 'parent_id');
     }
+
+    /**
+     * Creates a relation to get all the children of an item.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function children()
+    {
+        return $this->hasMany(self::class, 'parent_id')->with('children');
+    }
 }
