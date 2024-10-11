@@ -18,7 +18,7 @@ class TermFactory extends Factory
         ];
     }
 
-    public function parent(Term $parent = null)
+    public function parent(?Term $parent = null)
     {
         return $this->state(function (array $attributes) use ($parent) {
             return [
