@@ -16,7 +16,7 @@ trait Parentable
      */
     public function parent()
     {
-        return $this->belongsTo(self::class, 'parent_id');
+        return $this->belongsTo(static::class, 'parent_id');
     }
 
     /**
@@ -26,6 +26,6 @@ trait Parentable
      */
     public function children()
     {
-        return $this->hasMany(self::class, 'parent_id')->with('children');
+        return $this->hasMany(static::class, 'parent_id')->with('children');
     }
 }
